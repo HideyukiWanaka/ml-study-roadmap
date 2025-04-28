@@ -1,0 +1,36 @@
+name = input("Enter file:")
+if len(name) < 1:
+    name = "mbox-short.txt"
+handle = open(name)
+d = dict()
+l = list()
+for texts in handle:
+    if not texts.startswith("From "):
+        continue
+    text = texts.split()
+    times = text[5].split(":")
+    time = times[0]
+    d[time] = d.get(time, 0) +1
+d = sorted(d.items())
+for k, v in d:
+    print(k, v)
+
+Ch11
+Python Regular Expression Quick Guide
+
+^        Matches the beginning of a line
+$        Matches the end of the line
+.        Matches any character
+\s       Matches whitespace
+\S       Matches any non-whitespace character
+*        Repeats a character zero or more times
+*?       Repeats a character zero or more times 
+         (non-greedy)
++        Repeats a character one or more times
++?       Repeats a character one or more times 
+         (non-greedy)
+[aeiou]  Matches a single character in the listed set
+[^XYZ]   Matches a single character not in the listed set
+[a-z0-9] The set of characters can include a range
+(        Indicates where string extraction is to start
+)        Indicates where string extraction is to end
