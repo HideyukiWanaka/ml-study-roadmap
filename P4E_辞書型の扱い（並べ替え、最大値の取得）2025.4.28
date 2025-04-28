@@ -1,0 +1,46 @@
+辞書型の並べ替えについての参考HP
+https://note.nkmk.me/python-dict-value-max-min/
+
+最大・最小
+d = {'a': 100, 'b': 20, 'c': 50, 'd': 100, 'e': 80}
+print(max(d))
+# e
+print(min(d))
+# a
+
+最大・最小value
+d = {'a': 100, 'b': 20, 'c': 50, 'd': 100, 'e': 80}
+print(max(d.values()))
+# 100
+print(min(d.values()))
+# 20
+
+最大・最小のkey
+d = {'a': 100, 'b': 20, 'c': 50, 'd': 100, 'e': 80}
+print(max(d, key=d.get))
+# a
+print(min(d, key=d.get))
+# b
+
+最大・最小のkeyとvalueの出力
+d = {'a': 100, 'b': 20, 'c': 50, 'd': 100, 'e': 80}
+print(max(d.items(), key=lambda x: x[1]))
+# ('a', 100)
+print(min(d.items(), key=lambda x: x[1]))
+# ('b', 20)
+
+タプルのアンパックを利用して、それぞれ別々の変数に代入することもできる。
+max_k, max_v = max(d.items(), key=lambda x: x[1])
+print(max_k)
+# a
+print(max_v)
+# 100
+
+最大・最小となる値が複数存在する場合
+d = {'a': 100, 'b': 20, 'c': 50, 'd': 100, 'e': 80}
+print([kv for kv in d.items() if kv[1] == max(d.values())])
+# [('a', 100), ('d', 100)]
+print([kv[0] for kv in d.items() if kv[1] == max(d.values())])
+# ['a', 'd']
+print([kv for kv in d.items() if kv[1] == min(d.values())])
+# [('b', 20)]
