@@ -44,3 +44,21 @@ print([kv[0] for kv in d.items() if kv[1] == max(d.values())])
 # ['a', 'd']
 print([kv for kv in d.items() if kv[1] == min(d.values())])
 # [('b', 20)]
+
+辞書を使った語彙の出現頻度検索
+name = input("Enter file:")
+if len(name) < 1:
+    name = "mbox-short.txt"
+handle = open(name)
+d = dict()
+l = list()
+for texts in handle:
+    if not texts.startswith("From "):
+        continue
+    text = texts.split()
+    times = text[5].split(":")
+    time = times[0]
+    d[time] = d.get(time, 0) +1
+d = sorted(d.items())
+for k, v in d:
+    print(k, v)
