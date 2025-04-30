@@ -1,0 +1,9 @@
+fname = input("Enter file name: ")
+with open(fname) as f:
+    text = f.read()
+
+counts = {}
+for word in text.split():
+    counts[word] = counts.get(word, 0) + 1
+
+print("Most common words: ", max(counts, key=counts.get), counts[max(counts, key=counts.get)])
