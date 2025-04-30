@@ -1,8 +1,8 @@
-正規表現
-https://docs.python.org/ja/3/library/re.html
+#正規表現
+#https://docs.python.org/ja/3/library/re.html
 
-正規表現の使いかた
-https://www.sejuku.net/blog/23232?utm_source=blog&utm_medium=blog&utm_campaign=blog__52207
+#正規表現の使いかた
+#https://www.sejuku.net/blog/23232?utm_source=blog&utm_medium=blog&utm_campaign=blog__52207
 
 name = input("Enter file:")
 if len(name) < 1:
@@ -21,9 +21,9 @@ d = sorted(d.items())
 for k, v in d:
     print(k, v)
 
-Ch11
-Python Regular Expression Quick Guide
-
+#Ch11
+#Python Regular Expression Quick Guide
+'''
 ^        Matches the beginning of a line
 $        Matches the end of the line
 .        Matches any character
@@ -40,3 +40,4 @@ $        Matches the end of the line
 [a-z0-9] The set of characters can include a range
 (        Indicates where string extraction is to start
 )        Indicates where string extraction is to end
+'''
