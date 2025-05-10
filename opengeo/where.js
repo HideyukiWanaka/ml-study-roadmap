@@ -1,3 +1,3 @@
 myData = [
-[34.6825,135.1875,'Port Tower, Kobe, Hyogo, Japan'],
+[34.68492285,135.18547443145115, 'Kobe Port Tower Hotel']
 ];

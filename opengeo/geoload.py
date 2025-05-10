@@ -25,7 +25,7 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-fh = open("where.data")
+fh = open("/Users/wanakahideyuki/Library/Mobile Documents/com~apple~CloudDocs/仕事/ml-study-roadmap/opengeo/where.data")
 count = 0
 nofound = 0
 for line in fh:
