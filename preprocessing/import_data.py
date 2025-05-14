@@ -15,5 +15,5 @@ def load_housing_data():
 
 housing = load_housing_data()
 
-housing.head()
+print(housing.head())
 housing.info()
