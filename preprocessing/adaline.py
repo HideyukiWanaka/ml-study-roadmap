@@ -1,9 +1,9 @@
 # python machine learning 2章 p40~
-import plot_decision_regions
 import os
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+from .plot_decision_regions import plot_decision_regions
 from matplotlib.colors import ListedColormap
 
 
