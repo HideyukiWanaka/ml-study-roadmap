@@ -81,24 +81,24 @@ plt.show()
 # stratified sampling based on the income category 分割比率を全体の比率と変えずに実行
 
 splitter = StratifiedShuffleSplit(n_splits=10, test_size=0.2, random_state=42)
-start_splits = []
+strat_splits = []
 for train_index, test_index in splitter.split(housing, housing["income_cat"]):
-    start_train_set_n = housing.iloc[train_index]
-    start_test_set_n = housing.iloc[test_index]
-    start_splits.append([start_test_set_n, start_test_set_n])
+    strat_train_set_n = housing.iloc[train_index]
+    strat_test_set_n = housing.iloc[test_index]
+    strat_splits.append([strat_test_set_n, strat_test_set_n])
 
-start_train_set, start_test_set = start_splits[0]
+strat_train_set, strat_test_set = strat_splits[0]
 
-start_train_set, start_test_set = train_test_split(
+strat_train_set, strat_test_set = train_test_split(
     housing, test_size=0.2, stratify=housing["income_cat"], random_state=42)
 
-print(start_test_set["income_cat"].value_counts()/len(start_test_set))
+print(strat_test_set["income_cat"].value_counts()/len(strat_test_set))
 
 # removing the income category attribute
-for set in (start_train_set, start_test_set):
+for set in (strat_train_set, strat_test_set):
     set.drop("income_cat", axis=1, inplace=True)
 
-housing = start_train_set.copy()
+housing = strat_train_set.copy()
 
 housing.plot(kind="scatter", x="longitude", y="latitude", grid=True)
 plt.show()
