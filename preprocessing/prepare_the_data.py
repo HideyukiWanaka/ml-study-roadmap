@@ -1,3 +1,6 @@
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import OrdinalEncoder
 from sklearn.impute import SimpleImputer
@@ -81,8 +84,59 @@ print(cat_encorder.categories_)
 df_test = pd.DataFrame({"ocean_proximity": ["INLAND", "NEAR BAY"]})
 print(pd.get_dummies(df_test))
 
+cat_encorder.transform(df_test)
+
+df_test_unknown = pd.DataFrame({"ocean_proximity": ["<2H OCEAN", "ISLAND"]})
+print(pd.get_dummies(df_test_unknown))
+cat_encorder.handle_unknown = "ignore"
+cat_encorder.transform(df_test_unknown)
+
+
 print(cat_encorder.feature_names_in_)
 print(cat_encorder.get_feature_names_out())
-df_output = pd.DataFrame(cat_encorder.transform(df_test_unknown),
+df_output = pd.DataFrame(cat_encorder.transform(df_test_unknown).toarray(),
                          columns=cat_encorder.get_feature_names_out(),
                          index=df_test_unknown.index)
+
+# feature scaling
+# Normalization
+
+min_max_scaler = MinMaxScaler(feature_range=(-1, 1))
+housing_num_min_max_scaled = min_max_scaler.fit_transform(housing_num)
+print("minmax_housing_num:", housing_num_min_max_scaled[:8])
+
+# Standardization
+std_scaler = StandardScaler()
+housing_num_std_scaled = std_scaler.fit_transform(housing_num)
+print("std_housing_num:", housing_num_std_scaled[:8])
+
+# inverse transformation
+from sklearn.linear_model import LinearRegression
+
+target_scaler = StandardScaler()
+
+# housingをstrat_train_setに基づいて更新
+housing = strat_train_set.drop("median_house_value", axis=1)
+housing_labels = strat_train_set["median_house_value"].copy()
+
+# ラベルのスケーリング
+target_scsler = StandardScaler()
+scaled_labels = target_scsler.fit_transform(housing_labels.to_frame())
+
+# モデルのトレーニング
+model = LinearRegression()
+model.fit(housing[["median_income"]], scaled_labels)
+
+# 新しいデータで予測
+some_new_data = housing[["median_income"]].iloc[:5]
+scaled_predictions = model.predict(some_new_data)
+predictions = target_scsler.inverse_transform(scaled_predictions)
+print(predictions)
+
+# using the TransformedTargetRegressor
+from sklearn.compose import TransformedTargetRegressor
+model = TransformedTargetRegressor(LinearRegression(),
+                                   transformer=StandardScaler())
+model.fit(housing[["median_income"]], housing_labels)
+predictions = model.predict(some_new_data)
+print(predictions)
