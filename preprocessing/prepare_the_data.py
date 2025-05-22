@@ -1,3 +1,4 @@
+from sklearn.compose import TransformedTargetRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
@@ -111,7 +112,6 @@ housing_num_std_scaled = std_scaler.fit_transform(housing_num)
 print("std_housing_num:", housing_num_std_scaled[:8])
 
 # inverse transformation
-from sklearn.linear_model import LinearRegression
 
 target_scaler = StandardScaler()
 
@@ -134,7 +134,6 @@ predictions = target_scsler.inverse_transform(scaled_predictions)
 print(predictions)
 
 # using the TransformedTargetRegressor
-from sklearn.compose import TransformedTargetRegressor
 model = TransformedTargetRegressor(LinearRegression(),
                                    transformer=StandardScaler())
 model.fit(housing[["median_income"]], housing_labels)
