@@ -1,0 +1,60 @@
+週,フェーズNo.,フェーズ,タスク,メイン資料,補助資料,開始日,終了日,補助資料1,補助資料2,補助資料3
+1,1, 機械学習と特徴量エンジニアリング , 機械学習の基礎と評価指標 , Hands-On ML 3rd Ed ,,2025-05-18,2025-05-25, Pattern Recognition and Machine Learning (Bishop) , Mathematics for Machine Learning , Probabilistic Machine Learning: An Introduction 
+2,1, 機械学習と特徴量エンジニアリング , 教師あり学習（決定木・ランダムフォレスト） , Hands-On ML 3rd Ed ,,2025-05-25,2025-06-01, Pattern Recognition and Machine Learning (Bishop) , Python Machine Learning 3rd Ed , scikit-learn公式ドキュメント 
+3,1, 機械学習と特徴量エンジニアリング , アンサンブル手法（勾配ブースティング） , Hands-On ML 3rd Ed ,,2025-06-01,2025-06-08, Python Machine Learning 3rd Ed , Pattern Recognition and Machine Learning (Bishop) , scikit-learn公式ドキュメント 
+4,1, 機械学習と特徴量エンジニアリング , ハイパーパラメータ最適化 , Hands-On ML 3rd Ed ,,2025-06-08,2025-06-15, Python Machine Learning 3rd Ed , scikit-learn公式ドキュメント , Probabilistic Machine Learning: An Introduction 
+5,1, 機械学習と特徴量エンジニアリング , 特徴量選択と次元削減 , Hands-On ML 3rd Ed ,,2025-06-15,2025-06-22, Hands on Data Preprocessing in Python , Pattern Recognition and Machine Learning (Bishop) , scikit-learn公式ドキュメント 
+6,1, 機械学習と特徴量エンジニアリング , カテゴリカル変数のエンコーディング , Hands-On ML 3rd Ed ,,2025-06-22,2025-06-29, Hands on Data Preprocessing in Python , Python Machine Learning 3rd Ed , scikit-learn公式ドキュメント 
+7,1, 機械学習と特徴量エンジニアリング , 時間的特徴量の作成 , Hands-On ML 3rd Ed ,,2025-06-29,2025-07-06, Hands on Data Preprocessing in Python , Applied Time Series Analysis , scikit-learn公式ドキュメント 
+8,1, 機械学習と特徴量エンジニアリング , 交互作用項と非線形変換 , Hands-On ML 3rd Ed ,,2025-07-06,2025-07-13, Hands on Data Preprocessing in Python , Pattern Recognition and Machine Learning (Bishop) , scikit-learn公式ドキュメント 
+9,1, 機械学習と特徴量エンジニアリング , モデル解釈手法（SHAP値） , Interpretable Machine Learning ,,2025-07-13,2025-07-20, Hands-On ML 3rd Ed , Python Machine Learning 3rd Ed , scikit-learn公式ドキュメント 
+10,1, 機械学習と特徴量エンジニアリング , 医療データのための特徴量エンジニアリング , Secondary Analysis of Electronic Health Recording ,,2025-07-20,2025-07-27, Hands on Data Preprocessing in Python , Research Methods in Health , Hands-On ML 3rd Ed 
+11,2, 深層学習の基礎と応用 , 深層学習基礎と実装 , Deep Learning Book ,,2025-07-27,2025-08-03, Deep Learning with Python 2nd Ed , Hands-On ML 3rd Ed , Dive into Deep Learning (PyTorch版) 
+12,2, 深層学習の基礎と応用 , Transformerアーキテクチャ , Foundation Models for Natural Language Processing ,,2025-08-03,2025-08-10, Deep Learning Book , Deep Learning with Python 2nd Ed , Dive into Deep Learning (PyTorch版) 
+13,2,フェーズ2：NLP基礎,"NLP前処理：テキストクリーニング・形態素解析・単語正規化（参考：Jurafsky & Martin Ch.2, PyTorch NLP Ch.3）","Speech and Language Processing, Ch.2","PyTorch NLP, Ch.3",2025-08-10,2025-08-17, Deep Learning Book , Deep Learning with Python 2nd Ed , Dive into Deep Learning (PyTorch版) 
+14,2,フェーズ2：NLP基礎,"トークナイズとベクトル化（TF-IDF / Word2Vec / BERT）（参考：Jurafsky Ch.6, PyTorch NLP Ch.4-5）","Speech and Language Processing, Ch.6","PyTorch NLP, Ch.4-5",2025-08-17,2025-08-24, Deep Learning with PyTorch , Deep Learning Book , PyTorch公式チュートリアル 
+15,2,フェーズ2：NLP基礎,"文書分類とモデル評価（BERTファインチューニング）（参考：Jurafsky Ch.11, PyTorch NLP Ch.6）","Speech and Language Processing, Ch.11","PyTorch NLP, Ch.6",2025-08-24,2025-08-31, Deep Learning with Python 2nd Ed , Deep Learning with PyTorch , Dive into Deep Learning (PyTorch版) 
+16,2, 深層学習の基礎と応用 , 生成モデル基礎（VAE） , Deep Learning Book ,,2025-08-31,2025-09-07, Deep Learning with Python 2nd Ed , Deep Learning with PyTorch , Dive into Deep Learning (PyTorch版) 
+17,2, 疫学と医療データ分析基礎 , 疫学研究デザインの基礎 , 疫学 - 基礎から学ぶために 第3版 ,,2025-09-07,2025-09-14, PyTorch公式チュートリアル , Papers with Code , Dive into Deep Learning (PyTorch版) 
+18,2, 疫学と医療データ分析基礎 , コホート研究と症例対照研究 , 疫学 - 基礎から学ぶために 第3版 ,,2025-09-14,2025-09-21, Deep Learning with PyTorch , Deep Learning Book , PyTorch公式チュートリアル 
+19,2, 疫学と医療データ分析基礎 , 交絡と効果修飾 , 疫学 - 基礎から学ぶために 第3版 ,,2025-09-21,2025-09-28, Research Methods in Health , Secondary Analysis of Electronic Health Recording , Causal Inference: What If 
+20,2, 疫学と医療データ分析基礎 , バイアスと妥当性 , 疫学 - 基礎から学ぶために 第3版 ,,2025-09-28,2025-10-05, Research Methods in Health , Secondary Analysis of Electronic Health Recording , Causal Inference: What If 
+21,3, 疫学と医療データ分析基礎 , 医療データの特性と前処理 , Secondary Analysis of Electronic Health Recording ,,2025-10-05,2025-10-12, Research Methods in Health , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ , Causal Inference: What If 
+22,3, 疫学と医療データ分析基礎 , ICD-10コードと医療分類体系 , ICD-10対応 標準病名マスター 活用の手引き ,,2025-10-12,2025-10-19, Research Methods in Health , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ , Causal Inference: What If 
+23,3, 因果推論と傾向スコア , 因果推論の基礎概念 , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ ,,2025-10-19,2025-10-26, Research Methods in Health , Hands-On ML 3rd Ed , Hands on Data Preprocessing in Python 
+24,3, 因果推論と傾向スコア , 潜在的結果フレームワーク , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ ,,2025-10-26,2025-11-02, Secondary Analysis of Electronic Health Recording , Research Methods in Health , Python実装（pandas） 
+25,3, 因果推論と傾向スコア , 傾向スコアの基礎 , 傾向スコア分析 実装編 ,,2025-11-02,2025-11-09, Causal Inference: What If , 「原因と結果」の経済学 , Probabilistic Machine Learning: An Introduction 
+26,3, 因果推論と傾向スコア , 傾向スコアマッチング , 傾向スコア分析 実装編 ,,2025-11-09,2025-11-16, Causal Inference: What If , 「原因と結果」の経済学 , Probabilistic Machine Learning: An Introduction 
+27,3, 因果推論と傾向スコア , 逆確率重み付け法 , 傾向スコア分析 実装編 ,,2025-11-16,2025-11-23, Causal Inference: What If , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ , Python実装（scikit-learn） 
+28,3, 因果推論と傾向スコア , 操作変数法 , 「原因と結果」の経済学 ,,2025-11-23,2025-11-30, Causal Inference: What If , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ , Python実装（scikit-learn） 
+29,3, 因果推論と傾向スコア , 差分の差分法 , 「原因と結果」の経済学 ,,2025-11-30,2025-12-07, Causal Inference: What If , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ , Python実装（scikit-learn） 
+30,3, 因果推論と傾向スコア , 二重頑健推定と感度分析 , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ ,,2025-12-07,2025-12-14, Causal Inference: What If , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ , Python実装（statsmodels） 
+31,4, 生存分析と時系列分析 , 生存分析の基礎 , Survival Analysis: A Practical Approach ,,2025-12-14,2025-12-21, Causal Inference: What If , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ , Python実装（statsmodels） 
+32,4, 生存分析と時系列分析 , Kaplan-Meier曲線と検定 , Survival Analysis: A Practical Approach ,,2025-12-21,2025-12-28, Causal Inference: What If , 傾向スコア分析 実装編 , Python実装（causal-inference-python） 
+33,4, 生存分析と時系列分析 , Cox比例ハザードモデル , Applied Survival Analysis ,,2025-12-28,2026-01-04, Applied Survival Analysis , Probabilistic Machine Learning: An Introduction , Python実装（lifelines） 
+34,4, 生存分析と時系列分析 , 時間依存性共変量 , Applied Survival Analysis ,,2026-01-04,2026-01-11, Applied Survival Analysis , Probabilistic Machine Learning: An Introduction , Python実装（lifelines） 
+35,4, 生存分析と時系列分析 , 競合リスクモデル , Applied Survival Analysis ,,2026-01-11,2026-01-18, Survival Analysis: A Practical Approach , Probabilistic Machine Learning: An Introduction , Python実装（lifelines） 
+36,4, 生存分析と時系列分析 , 時系列分析の基礎 , Applied Time Series Analysis ,,2026-01-18,2026-01-25, Survival Analysis: A Practical Approach , Probabilistic Machine Learning: An Introduction , Python実装（scikit-survival） 
+37,4, 生存分析と時系列分析 , 年齢-時代-コホート分析 , Age-Period-Cohort Analysis ,,2026-01-25,2026-02-01, Survival Analysis: A Practical Approach , Probabilistic Machine Learning: An Introduction , Python実装（scikit-survival） 
+38,4, 生存分析と時系列分析 , 中断時系列分析 , Applied Time Series Analysis ,,2026-02-01,2026-02-08, Probabilistic Machine Learning: An Introduction , Hands-On ML 3rd Ed , Python実装（statsmodels） 
+39,4, 仮想介入シミュレーションと応用 , 反事実的予測の理論 , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ ,,2026-02-08,2026-02-15, Applied Time Series Analysis , Probabilistic Machine Learning: An Introduction , Python実装（statsmodels） 
+40,4, 仮想介入シミュレーションと応用 , 仮想介入シミュレーション設計 , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ ,,2026-02-15,2026-02-22, Research Methods in Health , Probabilistic Machine Learning: An Introduction , Python実装（statsmodels） 
+41,5, 仮想介入シミュレーションと応用 , 異質性効果の推定 , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ ,,2026-02-22,2026-03-01, Causal Inference: What If , Probabilistic Machine Learning: An Introduction , Python実装（causal-inference-python） 
+42,5, 仮想介入シミュレーションと応用 , 感度分析（E-value） , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ ,,2026-03-01,2026-03-08, Targeted Learning in Data Science , Causal Inference: What If , Python実装（causal-inference-python） 
+43,5, 仮想介入シミュレーションと応用 , 大規模データ処理の最適化 , Spark: The Definitive Guide ,,2026-03-08,2026-03-15, Causal Inference: What If , Targeted Learning in Data Science , Python実装（econml） 
+44,5, 仮想介入シミュレーションと応用 , 医療研究特有の可視化 , Data Visualization: A Practical Introduction ,,2026-03-15,2026-03-22, Causal Inference: What If , Targeted Learning in Data Science , Python実装（causal-inference-python） 
+45,5, 強化学習と統合プロジェクト , 研究計画書実装：データ準備と前処理 , Secondary Analysis of Electronic Health Recording ,,2026-03-22,2026-03-29, Hands-On ML 3rd Ed , Python Machine Learning 3rd Ed , Python実装（PySpark） 
+46,5, 強化学習と統合プロジェクト , 研究計画書実装：モデル構築と評価 , 因果推論 基礎から機械学習・時系列解析・因果探索を用いた意思決定のアプローチ ,,2026-03-29,2026-04-05, Secondary Analysis of Electronic Health Recording , Research Methods in Health ," Python実装（matplotlib, seaborn） "
+47,5, 深層学習の基礎と応用 , CNN応用と転移学習 , Deep Learning with PyTorch ,,2026-04-05,2026-04-12, OpenCV公式ドキュメント , Deep Learning with PyTorch , Python実装（OpenCV） 
+48,5, 深層学習の基礎と応用 , RNN・LSTM・GRU , Deep Learning with PyTorch ,,2026-04-12,2026-04-19, OpenCV公式ドキュメント , Deep Learning with PyTorch , Python実装（OpenCV） 
+49,5, 深層学習の基礎と応用 , GANの理論と実装 , Deep Learning Book ,,2026-04-19,2026-04-26, Biomedical Signal and Image Processing , Hands on Data Preprocessing in Python ," Python実装（pandas, numpy） "
+50,5, 深層学習の基礎と応用 , Diffusion Modelsの基礎 , Deep Learning with PyTorch ,,2026-04-26,2026-05-03, Sensor Technologies , Probabilistic Machine Learning: An Introduction , Python実装（FilterPy） 
+51,6, 深層学習の基礎と応用 , 医療画像への深層学習応用 , Biomedical Signal and Image Processing ,,2026-05-03,2026-05-10, Biomedical Signal and Image Processing , Deep Learning with PyTorch , Python実装（scikit-learn） 
+52,6, センサー処理とOpenCV , OpenCV基礎と画像処理 , OpenCV 4プログラミングブック ,,2026-05-10,2026-05-17, Sensor Technologies , Deep Learning with PyTorch ," Python実装（scipy, neurokit2） "
+53,6, センサー処理とOpenCV , 特徴検出と追跡 , OpenCV 4プログラミングブック ,,2026-05-17,2026-05-24, Deep Learning Book , Probabilistic Machine Learning: An Introduction , Python実装（OpenAI Gym） 
+54,6, センサー処理とOpenCV , センサーデータ前処理 , Sensor Technologies ,,2026-05-24,2026-05-31, Deep Learning Book , Probabilistic Machine Learning: An Introduction , Python実装（OpenAI Gym） 
+55,6, センサー処理とOpenCV , カルマンフィルタと状態推定 , カルマンフィルタの基礎 ,,2026-05-31,2026-06-07, Hands-On ML 3rd Ed , Hands on Data Preprocessing in Python ," Python実装（pandas, scikit-learn） "
+56,6, センサー処理とOpenCV , マルチモーダルセンサー融合 , Sensor Technologies ,,2026-06-07,2026-06-14, Hands-On ML 3rd Ed , 傾向スコア分析 実装編 ," Python実装（scikit-learn, PyTorch, causal-inference-python） "
+57,6, センサー処理とOpenCV , 医療センサーデータ分析 , Biomedical Signal and Image Processing ,,2026-06-14,2026-06-21,センサデータ解析入門（日科技連）,MATLABセンサーデータ処理ガイド,"Python実装（scipy, neurokit2）"
+58,6, 強化学習と統合プロジェクト , 強化学習の基礎と実装 , Hands-On ML 3rd Ed ,,2026-06-21,2026-06-28,強化学習入門（白井）,SpinningUp from OpenAI,Python実装（OpenAI Gym）
+59,6, 強化学習と統合プロジェクト , 医療分野での強化学習応用 , Hands-On ML 3rd Ed ,,2026-06-28,2026-07-05,強化学習入門（白井）,SpinningUp from OpenAI,Python実装（OpenAI Gym）
