@@ -18,8 +18,21 @@ print(svm_clf.predict(X_new))
 print(svm_clf.decision_function(X_new))
 
 # Non-linear SVM classifier
+from sklearn.datasets import make_moons
+from sklearn.preprocessing import PolynomialFeatures
 X, y = make_moons(n_samples=100, noise=0.15, random_state=42)
 polynominal_svm_clf = make_pipeline(PolynomialFeatures(degree=3),
                                     StandardScaler(),
                                     LinearSVC(C=10, max_iter=10_000, random_state=42))
 polynominal_svm_clf.fit(X, y)
+
+# Polynomial kernel SVM classifier
+from sklearn.svm import SVC
+poly_kernel_svm_clf = make_pipeline(StandardScaler(),
+                                    SVC(kernel:"poly", degree=3, coef0=1, C=5))
+poly_kernel_svm_clf.fit(X, y)
+
+# Gaussian kernel SVM classifier
+rbf_kernel_svm_clf = make_pipeline(StandardScaler(),
+                                   SVC(kernel='rbf', gamma=5, C=0.001))
+rbf_kernel_svm_clf.fit(X, y)
