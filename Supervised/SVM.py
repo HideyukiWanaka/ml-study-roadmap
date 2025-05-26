@@ -1,3 +1,4 @@
+from sklearn.svm import SVC
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.datasets import make_moons
 from sklearn.datasets import load_iris
@@ -18,8 +19,6 @@ print(svm_clf.predict(X_new))
 print(svm_clf.decision_function(X_new))
 
 # Non-linear SVM classifier
-from sklearn.datasets import make_moons
-from sklearn.preprocessing import PolynomialFeatures
 X, y = make_moons(n_samples=100, noise=0.15, random_state=42)
 polynominal_svm_clf = make_pipeline(PolynomialFeatures(degree=3),
                                     StandardScaler(),
@@ -29,7 +28,7 @@ polynominal_svm_clf.fit(X, y)
 # Polynomial kernel SVM classifier
 from sklearn.svm import SVC
 poly_kernel_svm_clf = make_pipeline(StandardScaler(),
-                                    SVC(kernel:"poly", degree=3, coef0=1, C=5))
+                                    SVC(kernel= "poly", degree=3, coef0=1, C=5))
 poly_kernel_svm_clf.fit(X, y)
 
 # Gaussian kernel SVM classifier
